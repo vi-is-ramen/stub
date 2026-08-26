@@ -19,20 +19,11 @@ Useful as a placeholder in generics, default values, or when you need a type tha
 ## Features
 
 - **`nightly`** – enables const implementations of `Default` and `Clone` (requires nightly Rust).
-- **`no_core`** – removes dependency on `core` (requires nightly). When enabled, only const impls are available.
+- **`no_core`** – removes dependency on `core` (requires nightly). When enabled, there are not any traits implementations.
 
 By default, the crate works on stable Rust with standard `impl`s.
 
 ## Usage
-
-Add this to your `Cargo.toml`:
-
-```toml
-[dependencies]
-stub = "0.1"
-```
-
-Then use the `Stub` type:
 
 ```rust
 use stub::Stub;
