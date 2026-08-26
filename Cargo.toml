@@ -1,0 +1,15 @@
+[package]
+name = "stub"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+description = "A dummy type that implements common traits"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/vi-is-ramen/stub-rs"
+readme = "README.md"
+keywords = ["stub", "placeholder", "mock", "no_std"]
+categories = ["development-tools", "no-std"]
+
+[features]
+no_core = ["nightly"]
+nightly = []
