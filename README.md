@@ -40,11 +40,11 @@ impl MyTrait for Stub {
     const VALUE: u32 = 42;
 }
 
-fn get_value<T: MyTrait>() -> u32 {
+fn get_value<T: MyTrait = Stub>() -> u32 {
     T::VALUE
 }
 
-assert_eq!(get_value::<Stub>(), 42);
+assert_eq!(get_value(), 42);
 ```
 
 ## License
